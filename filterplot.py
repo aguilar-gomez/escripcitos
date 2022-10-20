@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#Script shared with me when I was rotating in the Rokhsar lab, probably from Jessen Bredeson
 
 import os, subprocess, sys
 
