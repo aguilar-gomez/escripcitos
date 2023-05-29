@@ -23,11 +23,11 @@ else:
 	column_number=int(column_number)
 
 if action=="exclude":
-	table2filter[table2filter.iloc[:, column_number].astype(float) != value]
+	table2keep = table2filter[table2filter.iloc[:, column_number].astype(float) != value]
 elif action=="leq":
-	table2filter[table2filter.iloc[:, column_number].astype(float) <= value]
+	table2keep = table2filter[table2filter.iloc[:, column_number].astype(float) <= value]
 elif action=="geq":
-	table2filter[table2filter.iloc[:, column_number].astype(float) >= value]
+	table2keep = table2filter[table2filter.iloc[:, column_number].astype(float) >= value]
 
 table2keep.to_csv(outfilename,sep="\t",index=False,header=header)
 print(len(table2filter),len(table2keep))
