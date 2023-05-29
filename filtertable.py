@@ -10,7 +10,7 @@ import numpy as np
 intable=sys.argv[1]
 outfilename=sys.argv[2]
 column_number=sys.argv[3]
-value=int(sys.argv[4])
+value=float(sys.argv[4])
 action=sys.argv[5]
 header=sys.argv[6]
 
